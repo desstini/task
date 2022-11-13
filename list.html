@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Inheritance</title>
+    <style>
+        .likes {font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: brown;     
+        }
+        #enjoyment {font-size: small; 
+              font-family: 'Courier New', Courier, monospace;
+              color: coral;
+        }
+        .eat { font-size: 16px;
+            font-style: normal;
+            color: cyan;
+            list-style-type: none;
+        }
+        #edible { font-size: 10px;
+            font-style: italic;
+            color: darkviolet;
+            list-style-type: upper-alpha;
+        }
+        .move {font-size: 18px;
+            font-style: normal
+            color: red;
+            list-style-type: none;
+        }
+        #fly {font-size: 14px;
+             font-style: oblique;
+             color: lightseagreen;
+             list-style-type: upper-latin;
+        }
+        .dislikes{font-size: 2vh;
+            font-weight: 200;
+            font-style: normal;
+            font-display: swap;
+            color: chocolate;
+        }
+        #shun {font-size:2vh;
+            font-weight: 150;
+            font-style: italic;
+            font-display: fallback;
+            color:greenyellow;
+        }
+        .rat{font-size: 1ch;
+            font-stretch: narrower;
+            font-style: normal;
+            color: lime;
+            list-style-type: disc;
+        }
+        #gnawer{font-size: 1.5ch;
+            font-stretch: condensed;
+            font-style: inherit;
+            color: gold;
+            list-style-type: square;
+        }
+        .deceit {font-size: 1vw;
+            font-weight: lighter;
+            font-style: normal;
+            color: crimson;
+            list-style-type: disc;
+        }
+        #false {font-size: 1.5vw;
+            font-weight: bold;
+            font-style: initial;
+            color: tomato;
+            list-style-type: circle;
+        }
+        body{background-color: black;}
+        p{color: beige;}
+
+
+    </style>  
+</head>
+
+<body>
+    <p>Likes</p>
+    <ol class="likes" id="enjoyment">
+        <li class="eat" id="edible">Food</li>
+        <li class="move" id="fly">Travel</li>
+        <li>Fashion</li>
+        <li>Photography</li>
+        <li>Christianity</li>
+    </ol>
+
+    <p>Dislikes</p>
+    <ul class="dislikes" id="shun">
+        <li class="rat" id="gnawer">Rodents</li>
+        <li class="deceit" id="false">Lies</li>
+        <li>Stress</li>
+        <li>Sunburn</li>
+        <li>Ignorance</li>
+    </ul>
+
+
+</body>
+</html>
